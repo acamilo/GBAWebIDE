@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for HTML5 for Linux version 5.3.14">
+
+  <script src="gbajs/js/util.js">
+  </script>
+  <script src="gbajs/js/core.js">
+  </script>
+  <script src="gbajs/js/arm.js">
+  </script>
+  <script src="gbajs/js/thumb.js">
+  </script>
+  <script src="gbajs/js/mmu.js">
+  </script>
+  <script src="gbajs/js/io.js">
+  </script>
+  <script src="gbajs/js/audio.js">
+  </script>
+  <script src="gbajs/js/video.js">
+  </script>
+  <script src="gbajs/js/video/proxy.js">
+  </script>
+  <script src="gbajs/js/video/software.js">
+  </script>
+  <script src="gbajs/js/irq.js">
+  </script>
+  <script src="gbajs/js/keypad.js">
+  </script>
+  <script src="gbajs/js/sio.js">
+  </script>
+  <script src="gbajs/js/savedata.js">
+  </script>
+  <script src="gbajs/js/gpio.js">
+  </script>
+  <script src="gbajs/js/gba.js">
+  </script>
+  <script src="gbajs/resources/xhr.js">
+  </script>
+        <script src="v86/build/libv86.js"></script>
+
+  
+  <style>
+    body {
+      margin:0px;
+      padding:0px;
+    }
+    #editor { 
+        position: absolute;
+        top: 30px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+    
+    .parent{
+    position:absolute;
+    height:100%;
+    margin:0;
+    padding:0;
+    width:100%;
+  }
+  .code {
+    position:relative;
+    float:left;
+    height:100%;
+    width:60%;
+    background-color:#BBB;
+  }
+  .sidebar {
+    position:relative;
+    float:left;
+    height:100%;
+    width:40%;
+    background-color:#BBB;
+  }
+
+  .sidebaritem {
+  width:100%;
+  height:25%;
+  }
+  </style>
+  <title></title>
+</head>
+<body>
+  <div class="parent">
+
+    <div class="sidebar">
+      <div class="sidebaritem">
+        <canvas id="screen" width="480" height="320"></canvas>
+        <div id="preload">
+          <button class="bigbutton" id="select" onclick=
+          "document.getElementById('loader').click()">SELECT</button>
+          <input id="loader" type="file" accept=".gba" onchange=
+          "run(this.files[0]);">
+        </div>
+        <div class="sidebaritem">
+<div id="screen_container">
+    <div style="white-space: pre; font: 10px monospace; line-height: 10px"></div>
+    <canvas style="display: none"></canvas>
+</div>
+        </div>
+      </div>
+    </div>
+    <script src="ace-builds/src-noconflict/ace.js" type=
+    "text/javascript" charset="utf-8">
+    </script> 
+    <script>
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/monokai");
+    editor.getSession().setMode("ace/mode/javascript");
+    </script> 
+    <script src="js/gba.js">
+    </script>
+    <script src="js/vm.js">
+    </script>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+[submodule "ace-builds"]
+	path = ace-builds
+	url = https://github.com/ajaxorg/ace-builds.git
+[submodule "gbajs"]
+	path = gbajs
+	url = https://github.com/endrift/gbajs.git
+[submodule "v86"]
+	path = v86
+	url = https://github.com/copy/v86.git
