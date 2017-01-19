@@ -1,7 +1,6 @@
 # GBAWebIDE
 
-<iframe width="854" height="480" src="https://www.youtube.com/embed/WXM6rbmudyM" frameborder="0" allowfullscreen></iframe>
-
+[![Youtube video of it working](https://img.youtube.com/vi/WXM6rbmudyM/0.jpg)](https://www.youtube.com/watch?v=WXM6rbmudyM)
 Compile and test GBA games in a browser tab.
 
 You'll have to reassemble and uncompress the VM.
